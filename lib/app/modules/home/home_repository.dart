@@ -19,7 +19,7 @@ class HomeRepository extends Disposable {
 
   Future<ObservableList<Character>> getCharacterList() async {
     var ts = new DateTime.now().millisecondsSinceEpoch;
-    var encoded = utf8.encode(ts.toString()+"priv_key"+"pub_key");
+    var encoded = utf8.encode(ts.toString()+"c8a76539fc2531091a832ad0cce084a2ba12e7d0"+"8536ee7e2c02b177dd1328209053f05f");
     var hash = md5.convert(encoded);
     var url = "http://gateway.marvel.com/v1/public/characters?ts="+ts.toString()+"&apikey=8536ee7e2c02b177dd1328209053f05f"+"&hash="+hash.toString();
     final response =
@@ -32,7 +32,7 @@ class HomeRepository extends Disposable {
 
   Future<List<Character>> getCharacterSimpleList() async {
     var ts = new DateTime.now().millisecondsSinceEpoch;
-    var encoded = utf8.encode(ts.toString()+"priv_key"+"pub_key");
+    var encoded = utf8.encode(ts.toString()+"c8a76539fc2531091a832ad0cce084a2ba12e7d0"+"8536ee7e2c02b177dd1328209053f05f");
     var hash = md5.convert(encoded);
     var url = "http://gateway.marvel.com/v1/public/characters?ts="+ts.toString()+"&apikey=8536ee7e2c02b177dd1328209053f05f"+"&hash="+hash.toString();
     final response =

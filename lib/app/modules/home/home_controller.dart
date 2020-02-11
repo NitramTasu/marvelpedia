@@ -31,10 +31,4 @@ abstract class _HomeBase with Store {
   Future<List<Character>> getCharacterList() {
     return homeRepository.getCharacterSimpleList();
   }
-
-  @computed
-  ObservableList<Character> characterList(){
-    return characters;
-  }
-
 }

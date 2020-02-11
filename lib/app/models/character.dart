@@ -10,13 +10,13 @@ class Character{
   : id = json['id'],
     name = json['name'],
     description = json['description'],
-    urlImage = json['urlImage'];
+    urlImage = json['thumbnail']['path'] +"/landscape_amazing."+ json['thumbnail']["extension"];
 
   Map<String, dynamic> toJson() => 
   {
     'id' : id,
     'name' : name,
     'description' : description,
-    'urlImage' : urlImage,
+    'thumbnail' : urlImage,
   };
 }

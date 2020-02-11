@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'home_controller.dart';
+part of 'two_controller.dart';
 
 // **************************************************************************
 // StoreGenerator
@@ -8,8 +8,8 @@ part of 'home_controller.dart';
 
 // ignore_for_file: non_constant_identifier_names, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
-mixin _$HomeController on _HomeBase, Store {
-  final _$valueAtom = Atom(name: '_HomeBase.value');
+mixin _$TwoController on _TwoBase, Store {
+  final _$valueAtom = Atom(name: '_TwoBase.value');
 
   @override
   int get value {
@@ -26,32 +26,15 @@ mixin _$HomeController on _HomeBase, Store {
     }, _$valueAtom, name: '${_$valueAtom.name}_set');
   }
 
-  final _$charactersAtom = Atom(name: '_HomeBase.characters');
-
-  @override
-  ObservableList<Character> get characters {
-    _$charactersAtom.context.enforceReadPolicy(_$charactersAtom);
-    _$charactersAtom.reportObserved();
-    return super.characters;
-  }
-
-  @override
-  set characters(ObservableList<Character> value) {
-    _$charactersAtom.context.conditionallyRunInAction(() {
-      super.characters = value;
-      _$charactersAtom.reportChanged();
-    }, _$charactersAtom, name: '${_$charactersAtom.name}_set');
-  }
-
-  final _$_HomeBaseActionController = ActionController(name: '_HomeBase');
+  final _$_TwoBaseActionController = ActionController(name: '_TwoBase');
 
   @override
   void increment() {
-    final _$actionInfo = _$_HomeBaseActionController.startAction();
+    final _$actionInfo = _$_TwoBaseActionController.startAction();
     try {
       return super.increment();
     } finally {
-      _$_HomeBaseActionController.endAction(_$actionInfo);
+      _$_TwoBaseActionController.endAction(_$actionInfo);
     }
   }
 }
